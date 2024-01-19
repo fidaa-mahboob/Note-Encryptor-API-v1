@@ -24,45 +24,28 @@ If you want to secure notes then this API is for you. It works by doing a POST r
 * Then create new MySQL user```create user '<enter-username>'@'%' identified by '<enter-password>';```
 * To gain access to you database you need to give permissions through this ```grant all on notes_db.* to '<enter-username>'@'%';```
 
-### Executing program
+### Running in your local environment
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+To do this you will need to change MySQL username and password located in ```src/main/resources/application.properties``` to the ones you have set during installation.
 
-## Help
+To start the spring boot application you will need to run this command at the project root location:
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+``` mvn install ```
+
+Then once this command has run it generate a jar file. This can be found in the target folder.
+
+''' java -jar ./target/*.jar'''
+
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Fidaa Mahboob  
+ex. [@FidaaMahboob](https://www.fidaamahboob.com)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
+* 1.0
     * Initial Release
 
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
