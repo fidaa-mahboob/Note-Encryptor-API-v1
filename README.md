@@ -34,7 +34,7 @@ To start the spring boot application you will need to run this command at the pr
 
 Then once this command has run it generate a jar file. This can be found in the target folder.
 
-''' java -jar ./target/*.jar'''
+```java -jar ./target/*.jar```
 
 
 ## Authors
